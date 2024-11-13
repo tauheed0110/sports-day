@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Day Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Welcome to the Sports Day Simulation!</h1>
+    
+    <!-- Opening Ceremony Button -->
+    <div class="event">
+        <button id="startButton">Start Opening Ceremony</button>
+    </div>
+
+    <!-- Event Displays -->
+    <div class="event" id="race100m" style="display:none;">
+        <h2>100m Race</h2>
+        <p id="raceStatus">Race in progress...</p>
+    </div>
+
+    <div class="event" id="longJump" style="display:none;">
+        <h2>Long Jump</h2>
+        <p id="longJumpStatus">Determining winning color...</p>
+    </div>
+
+    <div class="event" id="highJump" style="display:none;">
+        <h2>High Jump</h2>
+        <p id="highJumpStatus">Guess the color with the highest jump:</p>
+        <div class="color-input">
+            <input type="text" id="colorGuess" placeholder="Enter color (red, blue, yellow)">
+            <button id="submitGuess">Submit Guess</button>
+        </div>
+    </div>
+
+    <!-- Award Ceremony -->
+    <div class="event" id="awardCeremony" style="display:none;">
+        <h2>Award Ceremony</h2>
+        <p id="awardStatus">Displaying final scores...</p>
+        <p id="winnerList"></p>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+        <h3>Current Scores</h3>
+        <p id="scoreboard">Red: 0, Blue: 0, Yellow: 0</p>
+    </div>
+
+    <!-- Event Log -->
+    <div class="event-log" id="eventLog">
+        <h3>Event Log</h3>
+        <ul id="logList">
+            <!-- Event progress logs will go here -->
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
